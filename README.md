@@ -12,8 +12,9 @@
 I had 9000+ files to convert (for a friend!) and did not want to do it by hand.
 
 # Most useful
-* I found and used the excellent https://github.com/dllmr/PUBtoPPT, which I highly recommend. I modified it slightly at https://github.com/Rygle/PUBtoPPT but that is only for scaling page sizes over 56 inches or under 1 inch and it mostly just worked. I also created a DOS/Powershell wrapper to make this batch convert recursively in Windows 11 with Powershell. The DOS part was just to allow double-clicking in Windows File Manager. See https://github.com/dllmr/PUBtoPPT/issues/1 for my Windows related use comments.
-* This worked *very* well for 9000+ files.
+* I found and used the excellent https://github.com/dllmr/PUBtoPPT, which I highly recommend. I modified it slightly at https://github.com/Rygle/PUBtoPPT but that is only for scaling page sizes over 56 inches or under 1 inch and it mostly just worked.
+* I also created a [DOS/Powershell wrapper](https://github.com/Rygle/Pub-Converters/blob/main/PUBtoPPT_py_Helper.bat) to make this batch convert recursively in Windows 11 with Powershell. The DOS part was just to allow double-clicking in Windows File Manager. See https://github.com/dllmr/PUBtoPPT/issues/1 for my Windows related use comments and my evolving batch file. The version first committed here is the last version in that comment.
+* This worked *very* well for 9000+ files thanks to @dllmr https://github.com/dllmr
 
 # Stuff I threw together:
 I also created the batch files I have added to this repository.
