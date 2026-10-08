@@ -4,7 +4,7 @@
 * I am NOT a coder. I just had a problem to solve. **ANY** improvements welcome!!
 
 # Manual Approaches:
-* Open files individually in MS Publisher 365 before EOL date (13/10/2026) or an older version after that.
+* Open files individually in MS Publisher 365 before EOL date (13/10/2026) or an older version after that (if you can install it!).
 * Open files individually in LibreOffice, which can edit and export as ODG or PDF. LibreOffice does a quite good job, and uses the open source Document Liberation Project libmspub importer - https://www.documentliberation.org/projects/
 * Open files individually in Affinity Studio (https://www.affinity.studio/), which can edit and export as PDF or possibly SVG. Affinity recently added the ability to open .pub files in the September 2026 update (https://www.affinity.studio/help/get-started-import-microsoft-publisher/), though it (currently) loses some graphics including WMF and EMF, some data in tables, some hyperlinks and various other things as per the link. It is also possibly scriptable, but I didn't go there - see https://www.affinity.studio/help/scripting-in-affinity/ or https://www.affinity.studio/help/workspace-scripting-studio/
 
