@@ -1,2 +1,22 @@
 # Pub-Converters
-Various approaches to converting .pub files to other useful formats.
+**Various approaches to converting MS Publisher .pub files to other useful formats.**
+* These are just some things I found or pieced together.
+* I am NOT a coder. I just had a problem to solve, and I never liked Publisher anyway so I am happy to help liberate .pub files, even a little.
+* ANY improvements welcome!!
+
+# Approaches:
+* Open files individually in MS Publisher 365 before EOL date (13/10/2026) or an older version after that.
+* Open files individually in LibreOffice, which can edit and export as ODG or PDF. LibreOffice does a quite good job, and uses the open source Document Liberation Project libmspub importer - https://www.documentliberation.org/projects/
+* Open files individually in Affinity Studio (https://www.affinity.studio/), which can edit and export as PDF or possibly SVG. Affinity recently added the ability to open .pub files in the September 2026 update (https://www.affinity.studio/help/get-started-import-microsoft-publisher/), though it (currently) loses some graphics including WMF and EMF, some data in tables, some hyperlinks and various other things as per the link. It is also possibly scriptable, but I didn't go there - see https://www.affinity.studio/help/scripting-in-affinity/ or https://www.affinity.studio/help/workspace-scripting-studio/
+
+I had 9000+ files to convert (for a friend!) and did not want to do it by hand.
+
+# Most useful
+* I found and used the excellent https://github.com/dllmr/PUBtoPPT, which I highly recommend. I modified it slightly at https://github.com/Rygle/PUBtoPPT but that is only for scaling page sizes over 56 inches or under 1 inch and it mostly just worked. I also created a DOS/Powershell wrapper to make this batch convert recursively in Windows 11 with Powershell. The DOS part was just to allow double-clicking in Windows File Manager. See https://github.com/dllmr/PUBtoPPT/issues/1 for my Windows related use comments.
+* This worked *very* well for 9000+ files.
+
+# Stuff I threw together:
+I also created the batch files I have added to this repository.
+* [publisher_2_PDF.bat](https://github.com/Rygle/Pub-Converters/blob/main/publisher_2_PDF.bat) will automate Microsoft Publisher and query whether to recurse directories. It will convert to PDF only. I used this on Windows 11 with Powershell 7 installed. Microsoft should have provided something like this themselves (!!!). It works well on the whole after a lot of pain. When I ran publisher_2_PDF.bat, Publisher would complain on many (especially older) documents about security issues to do with Macros. I installed AutoIt and created the [Publisher_Enable_Clicker.au3](https://github.com/Rygle/Pub-Converters/blob/main/Publisher_Enable_Clicker.au3) script to automatically enable all macros (I trusted my source files) but you could edit it to disable all. I had to save the following in an .au3 text/script file and then use AutoIt to compile this to an .exe file that will run fully in the background and look for the Publisher security warnings and click Enable. Compile by right-clicking and select either just Compile Script (x64) or 'Show more options' -> Compile Script (x64). I found at least on my computer that the AutoIt script will really kill your ability to do other things on the computer at the same time, but I just set it going and it worked quite well.
+* [LO_2_PDF_ODG.bat](https://github.com/Rygle/Pub-Converters/blob/main/LO_2_PDF_ODG.bat) will automate LibreOffice (26.8 tested on Windows) and query whether to recurse directories and also whether to convert to PDF or ODG. I used this on Windows 11 with Powershell 7 installed. This worked well and could convert a few files that Publisher and PUBtoPPT could not handle, and allowed ODG export.
+* [Untested_LO_PDF_ODG.ps1](https://github.com/Rygle/Pub-Converters/blob/main/Untested_LO_PDF_ODG.ps1) is UNTESTED CODE that may or may not work cross platform on Mac, Linux and Windows to automate LibreOffice. I HAVE NOT TESTED THIS!!!!! You will have to install Powershell 7. Save to a ps1 file e.g. 'lopub2pdfodg.ps1' and run 'pwsh lopub2pdfodg.ps1' or similar.
