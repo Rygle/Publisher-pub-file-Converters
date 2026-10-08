@@ -1,8 +1,7 @@
 # Publisher File Converters
 **Various approaches to converting MS Publisher .pub files to other useful formats post EOL.**
-* These are just some things I found or pieced together because Publisher is going EOL and someone asked for help.
-* I am NOT a coder. I just had a problem to solve, and I never liked Publisher anyway so I am happy to help liberate .pub files, even a little.
-* ANY improvements welcome!!
+* These are just some things I found or pieced together because Publisher is going EOL and someone asked for help, and I never liked Publisher anyway so I am happy to help liberate .pub files, even a little.
+* I am NOT a coder. I just had a problem to solve. **ANY** improvements welcome!!
 
 # Manual Approaches:
 * Open files individually in MS Publisher 365 before EOL date (13/10/2026) or an older version after that.
