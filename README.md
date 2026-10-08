@@ -1,6 +1,6 @@
-# Pub-Converters
-**Various approaches to converting MS Publisher .pub files to other useful formats.**
-* These are just some things I found or pieced together.
+# Publisher File Converters
+**Various approaches to converting MS Publisher .pub files to other useful formats post EOL.**
+* These are just some things I found or pieced together because Publisher is going EOL and someone asked for help.
 * I am NOT a coder. I just had a problem to solve, and I never liked Publisher anyway so I am happy to help liberate .pub files, even a little.
 * ANY improvements welcome!!
 
