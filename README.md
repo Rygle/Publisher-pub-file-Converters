@@ -8,7 +8,7 @@
 * Open files individually in LibreOffice, which can edit and export as ODG or PDF. LibreOffice does a quite good job, and uses the open source Document Liberation Project libmspub importer - https://www.documentliberation.org/projects/
 * Open files individually in Affinity Studio (https://www.affinity.studio/), which can edit and export as PDF or possibly SVG. Affinity recently added the ability to open .pub files in the September 2026 update (https://www.affinity.studio/help/get-started-import-microsoft-publisher/), though it (currently) loses some graphics including WMF and EMF, some data in tables, some hyperlinks and various other things as per the link. It is also possibly scriptable, but I didn't go there - see https://www.affinity.studio/help/scripting-in-affinity/ or https://www.affinity.studio/help/workspace-scripting-studio/
 
-I had 9000+ files to convert (for a friend!) and did not want to do conversions manually.
+So, these one off approaches work to varying degrees. But, I had 9000+ files to convert (for a friend!) and did not want to do them all manually.
 
 # Batch Approaches
 ## Most useful
